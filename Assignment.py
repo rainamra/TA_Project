@@ -1,7 +1,10 @@
+def convertToRadians(degrees):
+     return(degrees * 3.14 / 180)
+
 degrees = 150
-radians = degrees*3.14/180
-print("degrees = ", degrees)
-print("radians = ", radians)
+radians = convertToRadians(degrees)
+print ("Degrees :",degrees)
+print ("Radians :",radians)
 
 student1 = 80.0
 student2 = 90.0
@@ -31,17 +34,25 @@ print("Class 1:", leftover1)
 print("Class 2:", leftover2)
 print("Class 3:", leftover3)
 
+def convertToCirumference (pie_radius):
+    return (2 * pi * pie_radius)
 pi = 3.14
 pie_diameter = 55.4
 pie_radius = pie_diameter / 2
-circumference = 2 * pi * pie_radius
 circumference_msg = "Jimmy’s pie has a circumference:"
+circumference = convertToCirumference (pie_radius)
 print(circumference_msg, circumference)
+
+def convertToWavelength (frequency):
+    return (speed/frequency)
 
 meters = 20580
 speed = meters / 60
 frequency = 256
-wavelength = speed / frequency
+wavelength = convertToWavelength (frequency)
+
 print("The speed (m/s):", speed)
 print("The frequency (Hz):", frequency)
 print("The wavelength (m):", wavelength)
+
+
