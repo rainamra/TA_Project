@@ -56,3 +56,6 @@ print("The frequency (Hz):", frequency)
 print("The wavelength (m):", wavelength)
 
 
+xlist = ["aa", "bb", "cc"]
+for i in [2, 1, 0]:
+    print(xlist[i], end=" ")
